@@ -4,7 +4,11 @@ const { upload } = require('../helpers/multer_services')
 
 router.get('/', productController.getProducts)
 router.get('/:id', productController.getOneProduct)
-router.post('/add', upload.any(), productController.createProduct)
+router.post(
+    '/add',
+    upload.array('featureImage'),
+    productController.createProduct
+)
 router.delete('/:id', productController.deleteProduct)
 router.put('/:id', productController.updateProduct)
 

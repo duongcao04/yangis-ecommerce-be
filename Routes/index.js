@@ -1,4 +1,5 @@
 const rootRouter = require('express').Router()
+const variantRoute = require('./variant.route')
 const galleryRoute = require('./gallery.route')
 const productRoute = require('./product.route')
 const categoryRoute = require('./category.route')
@@ -18,6 +19,7 @@ rootRouter.get('/', (req, res) => {
     })
 })
 
+rootRouter.use('/variant', variantRoute)
 rootRouter.use('/gallery', galleryRoute)
 
 rootRouter.use('/product', productRoute)

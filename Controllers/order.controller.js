@@ -27,16 +27,7 @@ const orderController = {
     },
     getAnOrders: async (req, res, next) => {
         try {
-            const order = await Order.findById(req.params.id)
-                .populate('user')
-                .populate({
-                    path: 'products',
-                    populate: {
-                        path: 'category',
-                        model: Category,
-                        select: 'name -_id',
-                    },
-                })
+            const order = await Order.findById(req.params.id).populate('user')
 
             res.status(200).json({
                 status: 200,

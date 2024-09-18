@@ -1,6 +1,6 @@
 const createError = require('http-errors')
 
-const Gallery = require('../Models/gallery.model')
+const Variant = require('../Models/variant.model')
 const Product = require('../Models/product.model')
 const Category = require('../Models/category.model')
 const Brand = require('../Models/brand.model')
@@ -72,17 +72,18 @@ const productController = {
     },
     createProduct: async (req, res, next) => {
         try {
-            const { name, price, sale, category, brand, attribute } = req.body
+            const { name, price, sale, category, brand, variants } = req.body
+            let inStock = 0
+            let thumbnail = ''
             const isExist = await Product.findOne({ name: name })
             if (isExist) {
                 throw createError.Conflict(
-                    `${req.body.name} is exist in inventory`
+                    `${req.body.name} đã tồn tại trong kho`
                 )
             }
 
-            const [thumbnailFile, ...featureImageFile] = req.files
+            const featureImageFile = req.files
             const folder = 'products'
-            const thumbnail = await cloudinaryUploadImage(thumbnailFile, folder)
             const featureImage = await cloudinaryUploadImage(
                 featureImageFile,
                 folder
@@ -90,15 +91,14 @@ const productController = {
 
             const newProduct = new Product({
                 name,
-                thumbnail,
                 featureImage,
                 price,
                 sale,
+                inStock,
                 category,
                 brand,
-                attribute,
+                variants,
             })
-            res.send(newProduct)
             const savedProduct = await newProduct.save()
 
             if (category) {
@@ -114,17 +114,28 @@ const productController = {
                 })
             }
 
-            if (attribute) {
-                if (attribute.color) {
-                    attribute.color.forEach(async (item) => {
-                        const gallery = await Gallery.findById(item)
-                        await gallery.updateOne({ product: savedProduct._id })
-                    })
-                }
+            if (variants) {
+                let index = 0
+                variants.forEach(async (item) => {
+                    const getVariant = await Variant.findById(item)
+                    inStock += +getVariant.inStock
+                    await getVariant.updateOne({ product: savedProduct._id })
+
+                    if (index === 0) {
+                        thumbnail = getVariant.images[0]
+                    }
+
+                    index++
+
+                    if (index === variants.length - 1) {
+                        await savedProduct.updateOne({ inStock, thumbnail })
+                    }
+                })
             }
+
             res.status(201).json({
                 status: 201,
-                message: 'Insert new product successfully',
+                message: 'Thêm mới sản phẩm thành công',
             })
         } catch (error) {
             next(error)
@@ -154,7 +165,7 @@ const productController = {
                 throw createError.NotFound(`Không tìm thấy sản phẩm`)
             }
 
-            res.json({ status: 200, message: 'Cập ' })
+            res.json({ status: 200, message: 'Cập nhật sản phẩm thành công' })
         } catch (error) {
             next(error)
         }

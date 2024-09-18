@@ -10,7 +10,10 @@ const OrderSchema = new Schema(
             phone: { type: String, required: true },
             email: { type: String },
         },
-        products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+        products: {
+            type: Array,
+            default: [],
+        },
         totalAmount: { type: Number, required: true },
         shippingFee: { type: Number, required: true },
         bonusPoints: {
