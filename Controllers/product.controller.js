@@ -10,7 +10,7 @@ const { cloudinaryUploadImage } = require('../helpers/cloudinary_services')
 const productController = {
     getProducts: async (req, res, next) => {
         try {
-            const { name, order, sort } = req.query
+            const { name, order, sort, category, brand } = req.query
 
             // Pagination argument
             const { limit, page } = req.query
@@ -21,16 +21,57 @@ const productController = {
                 products = await Product.find().pagination(limit, page).lean()
             }
 
-            // Search by name
-            if (name) {
-                products = await Product.find().byName(name)
-                totalProduct = products.length
-                if (limit) {
-                    products = await Product.find()
-                        .byName(name)
-                        .pagination(limit, page)
+            if (name || category || brand) {
+                console.log({ name, category, brand })
+                let options = {}
+                if (name) {
+                    options['name'] = new RegExp(name, 'i')
                 }
+
+                products = await Product.find(options).then((products) => {
+                    if (category && brand) {
+                        return products.filter(
+                            (product) =>
+                                product.category.name === category &&
+                                product.brand.name === brand
+                        )
+                    } else {
+                        if (category) {
+                            return products.filter(
+                                (product) => product.category.name === category
+                            )
+                        }
+                        if (brand) {
+                            return products.filter(
+                                (product) => product.brand.name === brand
+                            )
+                        }
+                    }
+
+                    return products
+                })
+
+                totalProduct = products.length
             }
+
+            // // Search by name
+            // if (name) {
+            //     products = await Product.find().byName(name)
+            //     totalProduct = products.length
+            //     if (limit) {
+            //         products = await Product.find()
+            //             .byName(name)
+            //             .pagination(limit, page)
+            //     }
+            // }
+
+            // if (category) {
+            //     const getProducts = await Product.find().lean()
+            //     products = getProducts.filter(
+            //         (product) => product.category.name === category
+            //     )
+            //     totalProduct = products.length
+            // }
 
             // Order by
             if (order) {
@@ -127,7 +168,7 @@ const productController = {
 
                     index++
 
-                    if (index === variants.length - 1) {
+                    if (index === variants.length) {
                         await savedProduct.updateOne({ inStock, thumbnail })
                     }
                 })
