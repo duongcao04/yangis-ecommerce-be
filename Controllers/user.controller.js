@@ -53,7 +53,7 @@ const userController = {
 
             const isValid = await user.isCheckedPasswrod(req.body.password)
             if (!isValid) {
-                throw createError.Unauthorized("Mật khẩu không chính xác")
+                throw createError.Unauthorized('Mật khẩu không chính xác')
             }
             const accessToken = await signAccessToken(user)
             const refreshToken = await signRefreshToken(user)
@@ -62,8 +62,8 @@ const userController = {
 
             res.status(200).json({
                 status: 200,
-                data: others,
-                token: accessToken,
+                message: 'Đăng nhập thành công',
+                data: { user: others, token: accessToken },
             })
         } catch (error) {
             next(error)

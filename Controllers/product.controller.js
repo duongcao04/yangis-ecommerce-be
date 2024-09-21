@@ -21,8 +21,13 @@ const productController = {
                 products = await Product.find().pagination(limit, page).lean()
             }
 
+            // const buildQuery = (filters) => {
+            //     let query = {};
+            //     if (filters.name) {query.name = new RegExp(filters.name, 'i')}
+            //     if (filters.category) {query['category.name'] = category}
+            // }
+
             if (name || category || brand) {
-                console.log({ name, category, brand })
                 let options = {}
                 if (name) {
                     options['name'] = new RegExp(name, 'i')
@@ -53,25 +58,6 @@ const productController = {
 
                 totalProduct = products.length
             }
-
-            // // Search by name
-            // if (name) {
-            //     products = await Product.find().byName(name)
-            //     totalProduct = products.length
-            //     if (limit) {
-            //         products = await Product.find()
-            //             .byName(name)
-            //             .pagination(limit, page)
-            //     }
-            // }
-
-            // if (category) {
-            //     const getProducts = await Product.find().lean()
-            //     products = getProducts.filter(
-            //         (product) => product.category.name === category
-            //     )
-            //     totalProduct = products.length
-            // }
 
             // Order by
             if (order) {
