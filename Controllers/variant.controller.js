@@ -7,7 +7,13 @@ const { cloudinaryUploadImage } = require('../helpers/cloudinary_services')
 const variantController = {
     getVariants: async (req, res, next) => {
         try {
-            const variants = await Variant.find()
+            const { product } = req.query
+            let variants = await Variant.find()
+
+            if (product) {
+                variants = await Variant.find({ product: product })
+            }
+
             res.status(200).json({
                 status: 200,
                 message: 'Get variants successfully',

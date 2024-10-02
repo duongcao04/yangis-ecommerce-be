@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const { nonAccentVietnamese } = require('../helpers/text_services')
 
 const Category = require('./category.model')
 const Brand = require('./brand.model')
@@ -12,6 +13,10 @@ const ProductSchema = new Schema(
             type: String,
             required: true,
         },
+        slug: {
+            type: String,
+            default: '',
+        },
         thumbnail: { type: String, default: '' },
         featureImage: [{ type: String, default: [] }],
         price: {
@@ -20,10 +25,6 @@ const ProductSchema = new Schema(
         },
         sale: {
             type: String,
-        },
-        inStock: {
-            type: Number,
-            default: 0,
         },
         description: {
             type: String,
@@ -54,6 +55,11 @@ const ProductSchema = new Schema(
     { timestamps: true }
 )
 
+ProductSchema.pre('save', function () {
+    if (!this.slug) {
+        this.slug = nonAccentVietnamese(this.name)
+    }
+})
 // Automatic reference all field ids
 // https://viblo.asia/p/tim-hieu-ve-populate-trong-mongoogse-GrLZDvpE5k0
 ProductSchema.pre('find', function () {
@@ -63,13 +69,13 @@ ProductSchema.pre('find', function () {
         {
             path: 'variants',
             model: Variant,
-            select: 'label images inStock -_id',
+            select: 'label images inStock',
         },
     ])
 })
 
-ProductSchema.pre('findOne', function () {
-    this.populate([
+ProductSchema.query.replaceIds = function () {
+    return this.populate([
         { path: 'category', model: Category, select: 'name -_id' },
         { path: 'brand', model: Brand, select: 'name -_id' },
         {
@@ -78,7 +84,7 @@ ProductSchema.pre('findOne', function () {
             select: 'label images inStock -_id',
         },
     ]) // Automatic reference all field ids
-})
+}
 
 // Search by $name
 ProductSchema.query.byName = function (name) {

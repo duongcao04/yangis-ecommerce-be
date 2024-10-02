@@ -3,7 +3,7 @@ const productController = require('../Controllers/product.controller')
 const { upload } = require('../helpers/multer_services')
 
 router.get('/', productController.getProducts)
-router.get('/:id', productController.getOneProduct)
+router.get('/:slug', productController.getBySlug)
 router.post(
     '/add',
     upload.array('featureImage'),

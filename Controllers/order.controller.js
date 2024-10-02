@@ -1,7 +1,6 @@
 const createError = require('http-errors')
 
 const Order = require('../Models/order.model')
-const Category = require('../Models/category.model')
 
 const orderController = {
     getOrders: async (req, res, next) => {

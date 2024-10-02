@@ -6,6 +6,7 @@ const categoryRoute = require('./category.route')
 const brandRoute = require('./brand.route')
 const orderRoute = require('./order.route')
 const userRoute = require('./user.route')
+const uploadRoute = require('./upload.route')
 
 // Root router
 rootRouter.get('/', (req, res) => {
@@ -29,5 +30,7 @@ rootRouter.use('/brand', brandRoute)
 rootRouter.use('/order', orderRoute)
 
 rootRouter.use('/user', userRoute)
+
+rootRouter.use('/upload', uploadRoute)
 
 module.exports = rootRouter

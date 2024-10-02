@@ -85,9 +85,10 @@ const productController = {
             next(error)
         }
     },
-    getOneProduct: async (req, res, next) => {
+    getBySlug: async (req, res, next) => {
         try {
-            const product = await Product.findById(req.params.id)
+            const { slug } = req.params
+            const product = await Product.findOne({ slug: slug }).replaceIds()
             res.status(200).json({
                 status: 200,
                 message: 'Get a product successfully',
@@ -99,13 +100,20 @@ const productController = {
     },
     createProduct: async (req, res, next) => {
         try {
-            const { name, price, sale, category, brand, variants } = req.body
+            const { name, price, sale, category, brand, variants, slug } =
+                req.body
             let inStock = 0
             let thumbnail = ''
             const isExist = await Product.findOne({ name: name })
             if (isExist) {
                 throw createError.Conflict(
                     `${req.body.name} đã tồn tại trong kho`
+                )
+            }
+            const isExistSlug = await Product.findOne({ slug: slug })
+            if (isExistSlug) {
+                throw createError.Conflict(
+                    `Đường dẫn ${req.body.slug} đã tồn tại`
                 )
             }
 
@@ -118,6 +126,7 @@ const productController = {
 
             const newProduct = new Product({
                 name,
+                slug,
                 featureImage,
                 price,
                 sale,
@@ -170,12 +179,16 @@ const productController = {
     },
     deleteProduct: async (req, res, next) => {
         try {
-            const product = await Product.findByIdAndDelete(req.params.id)
+            const product = await Product.findById(req.params.id)
 
             if (!product) {
                 throw createError.NotFound(`Không tìm thấy sản phẩm`)
             }
+            product.variants.forEach(async (variant) => {
+                await Variant.findByIdAndDelete(variant)
+            })
 
+            await Product.deleteOne({ _id: product._id })
             res.json({ status: 200, message: 'Xóa sản phẩm thành công' })
         } catch (error) {
             next(error)
