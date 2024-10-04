@@ -18,6 +18,10 @@ const productController = {
                 .byName(name)
                 .byCategory(category)
                 .byBrand(brand)
+                .populate({
+                    path: 'variants',
+                    select: 'label images inStock -_id',
+                })
                 .orderBy(orderBy, sort)
                 .lean()
                 .then((result) => {
