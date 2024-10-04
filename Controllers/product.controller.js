@@ -29,12 +29,18 @@ const productController = {
                         (product) =>
                             product.category !== null && product.brand !== null
                     )
-                    totalProduct = result.length
-                    const startIndex = (page - 1) * limit // Tính chỉ số bắt đầu
-                    const endIndex = page * limit // Tính chỉ số kết thúc
-                    return products.slice(startIndex, endIndex) // Cắt mảng theo giới hạn
+                    totalProduct = products.length
+
+                    if (!limit) return products
+                    else {
+                        const currentPage = page ?? 1
+
+                        const startIndex = (currentPage - 1) * limit // Tính chỉ số bắt đầu
+                        const endIndex = currentPage * limit // Tính chỉ số kết thúc
+                        return products.slice(startIndex, endIndex) // Cắt mảng theo giới hạn
+                    }
                 })
-            const totalPage = Math.ceil(totalProduct / limit) ?? 1
+            const totalPage = !limit ? 1 : Math.ceil(totalProduct / limit)
             return res.status(200).json({
                 status: 200,
                 message: 'Get products successfully',
