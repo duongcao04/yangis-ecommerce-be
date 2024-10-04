@@ -30,7 +30,7 @@ const productController = {
                     const endIndex = page * limit // Tính chỉ số kết thúc
                     return products.slice(startIndex, endIndex) // Cắt mảng theo giới hạn
                 })
-            const totalPage = Math.round(totalProduct / limit) ?? 1
+            const totalPage = Math.ceil(totalProduct / limit) ?? 1
             return res.status(200).json({
                 status: 200,
                 message: 'Get products successfully',
