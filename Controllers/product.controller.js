@@ -10,74 +10,33 @@ const { cloudinaryUploadImage } = require('../helpers/cloudinary_services')
 const productController = {
     getProducts: async (req, res, next) => {
         try {
-            const { name, order, sort, category, brand } = req.query
+            const { limit, page, orderBy, sort, ...filters } = req.query
 
-            // Pagination argument
-            const { limit, page } = req.query
-
-            let products = await Product.find().lean()
-            let totalProduct = products.length
-            if (limit) {
-                products = await Product.find().pagination(limit, page).lean()
-            }
-
-            // const buildQuery = (filters) => {
-            //     let query = {};
-            //     if (filters.name) {query.name = new RegExp(filters.name, 'i')}
-            //     if (filters.category) {query['category.name'] = category}
-            // }
-
-            if (name || category || brand) {
-                let options = {}
-                if (name) {
-                    options['name'] = new RegExp(name, 'i')
-                }
-
-                products = await Product.find(options).then((products) => {
-                    if (category && brand) {
-                        return products.filter(
-                            (product) =>
-                                product.category.name === category &&
-                                product.brand.name === brand
-                        )
-                    } else {
-                        if (category) {
-                            return products.filter(
-                                (product) => product.category.name === category
-                            )
-                        }
-                        if (brand) {
-                            return products.filter(
-                                (product) => product.brand.name === brand
-                            )
-                        }
-                    }
-
-                    return products
+            const { name, category, brand } = filters
+            let totalProduct
+            const products = await Product.find()
+                .byName(name)
+                .byCategory(category)
+                .byBrand(brand)
+                .orderBy(orderBy, sort)
+                .lean()
+                .then((result) => {
+                    const products = result.filter(
+                        (product) =>
+                            product.category !== null && product.brand !== null
+                    )
+                    totalProduct = result.length
+                    const startIndex = (page - 1) * limit // Tính chỉ số bắt đầu
+                    const endIndex = page * limit // Tính chỉ số kết thúc
+                    return products.slice(startIndex, endIndex) // Cắt mảng theo giới hạn
                 })
-
-                totalProduct = products.length
-            }
-
-            // Order by
-            if (order) {
-                products = await Product.find().orderBy(order, sort)
-                totalProduct = products.length
-                if (limit) {
-                    products = await Product.find()
-                        .orderBy(order, sort)
-                        .pagination(limit, page)
-                }
-            }
-
-            const totalPage = Math.ceil(totalProduct / limit) || 1
-
-            res.status(200).json({
+            const totalPage = Math.round(totalProduct / limit) ?? 1
+            return res.status(200).json({
                 status: 200,
                 message: 'Get products successfully',
                 data: {
                     totalProduct,
-                    totalPage: totalPage,
+                    totalPage,
                     products: products,
                 },
             })

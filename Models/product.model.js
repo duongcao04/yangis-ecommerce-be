@@ -62,18 +62,6 @@ ProductSchema.pre('save', function () {
 })
 // Automatic reference all field ids
 // https://viblo.asia/p/tim-hieu-ve-populate-trong-mongoogse-GrLZDvpE5k0
-ProductSchema.pre('find', function () {
-    this.populate([
-        { path: 'category', model: Category, select: 'name -_id' },
-        { path: 'brand', model: Brand, select: 'name -_id' },
-        {
-            path: 'variants',
-            model: Variant,
-            select: 'label images inStock',
-        },
-    ])
-})
-
 ProductSchema.query.replaceIds = function () {
     return this.populate([
         { path: 'category', model: Category, select: 'name -_id' },
@@ -88,20 +76,43 @@ ProductSchema.query.replaceIds = function () {
 
 // Search by $name
 ProductSchema.query.byName = function (name) {
+    if (!name) return this
     return this.where({ name: new RegExp(name, 'i') })
+}
+ProductSchema.query.byCategory = function (category) {
+    if (!category) return this
+    return this.populate({
+        path: 'category',
+        match: { slug: category },
+        select: 'name slug -_id',
+    })
+}
+ProductSchema.query.byBrand = function (brand) {
+    if (!brand) return this
+    return this.populate({
+        path: 'brand',
+        match: { slug: brand },
+        select: 'name slug -_id',
+    })
 }
 
 // $order by $sort
 ProductSchema.query.orderBy = function (orderBy, sort) {
-    if (sort.toLowerCase() === 'asc')
-        return this.collation({ locale: 'en' }).sort(`${orderBy}`)
-    if (sort.toLowerCase() === 'desc')
-        return this.collation({ locale: 'en' }).sort(`-${orderBy}`)
+    if (!orderBy) return this
+    else {
+        if (sort.toLowerCase() === 'desc')
+            return this.collation({ locale: 'en' }).sort(`${orderBy}`)
+        else return this.collation({ locale: 'en' }).sort(`-${orderBy}`)
+    }
 }
 
 // Pagination
 ProductSchema.query.pagination = function (limit, page) {
-    return this.skip((page - 1) * limit).limit(limit)
+    if (!limit) return this
+    else {
+        const currentPage = page ?? 1
+        return this.skip((currentPage - 1) * limit).limit(limit)
+    }
 }
 
 module.exports = mongoose.model('Product', ProductSchema)

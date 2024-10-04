@@ -1,11 +1,15 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const CategorySchema = new Schema(
+const categorySchema = new Schema(
     {
         name: {
             type: String,
             required: true,
+        },
+        slug: {
+            type: String,
+            default: '',
         },
         thumbnail: {
             type: String,
@@ -19,5 +23,10 @@ const CategorySchema = new Schema(
     },
     { timestamps: true }
 )
+categorySchema.pre('save', function () {
+    if (!this.slug) {
+        this.slug = nonAccentVietnamese(this.name)
+    }
+})
 
-module.exports = mongoose.model('Category', CategorySchema)
+module.exports = mongoose.model('Category', categorySchema)

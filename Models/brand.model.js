@@ -7,6 +7,10 @@ const brandSchema = new Schema(
             type: String,
             required: true,
         },
+        slug: {
+            type: String,
+            default: '',
+        },
         logo: {
             type: String,
         },
@@ -14,5 +18,10 @@ const brandSchema = new Schema(
     },
     { timestamps: true }
 )
+brandSchema.pre('save', function () {
+    if (!this.slug) {
+        this.slug = nonAccentVietnamese(this.name)
+    }
+})
 
 module.exports = mongoose.model('Brand', brandSchema)
