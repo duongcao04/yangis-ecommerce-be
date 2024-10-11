@@ -4,7 +4,6 @@ const { nonAccentVietnamese } = require('../helpers/text_services')
 
 const Category = require('./category.model')
 const Brand = require('./brand.model')
-const Gallery = require('./gallery.model')
 const Variant = require('./variant.model')
 
 const ProductSchema = new Schema(

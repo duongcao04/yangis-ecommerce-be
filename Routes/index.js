@@ -1,12 +1,12 @@
 const rootRouter = require('express').Router()
 const variantRoute = require('./variant.route')
-const galleryRoute = require('./gallery.route')
 const productRoute = require('./product.route')
 const categoryRoute = require('./category.route')
 const brandRoute = require('./brand.route')
 const orderRoute = require('./order.route')
 const userRoute = require('./user.route')
 const uploadRoute = require('./upload.route')
+const reviewRoute = require('./review.route')
 
 // Root router
 rootRouter.get('/', (req, res) => {
@@ -21,7 +21,7 @@ rootRouter.get('/', (req, res) => {
 })
 
 rootRouter.use('/variant', variantRoute)
-rootRouter.use('/gallery', galleryRoute)
+rootRouter.use('/review', reviewRoute)
 
 rootRouter.use('/product', productRoute)
 rootRouter.use('/category', categoryRoute)
