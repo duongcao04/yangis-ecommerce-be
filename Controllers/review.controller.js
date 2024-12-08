@@ -1,6 +1,6 @@
 const createError = require('http-errors')
 
-const Review = require('../Models/review.model')
+const Review = require('../models/review.model')
 const Product = require('../Models/product.model')
 
 const reviewController = {

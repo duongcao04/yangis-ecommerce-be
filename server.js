@@ -3,8 +3,9 @@ const cors = require('cors')
 const morgan = require('morgan')
 const createError = require('http-errors')
 const bodyParser = require('body-parser')
-const rootRouter = require('./Routes')
+const rootRouter = require('./routes')
 const _CONF = require('./config/variables')
+const { swaggerSpec, swaggerUi } = require('./helpers/swagger_services')
 require('./helpers/connections_mongodb')
 
 const app = express()
@@ -18,6 +19,7 @@ app.use(morgan('common'))
 
 //Routes
 app.use('/api', rootRouter)
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 // Fowrard to handle error
 app.all('*', (req, res, next) => {

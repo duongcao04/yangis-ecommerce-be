@@ -1,0 +1,417 @@
+[{
+  "_id": {
+    "$oid": "66e1bea3847aaf1fb9adc750"
+  },
+  "name": "Laptop",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726070435/yangis-ecommerce/categories/vkcja9tpqsrx48axfkwy.jpg",
+  "icon": "hugeicons:laptop",
+  "products": [
+    {
+      "$oid": "66eac0849577e958ff28ae2c"
+    },
+    {
+      "$oid": "66eac3fae3335200c6b1cbd0"
+    },
+    {
+      "$oid": "66eac9197a73bf094a9742a7"
+    },
+    {
+      "$oid": "66eac9627a73bf094a97431d"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-11T16:00:35.640Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:36:50.180Z"
+  },
+  "__v": 0,
+  "slug": "laptop"
+},
+{
+  "_id": {
+    "$oid": "66ceff6bbf5820bf96f24b8d"
+  },
+  "name": "Điện thoại",
+  "products": [
+    {
+      "$oid": "66cf0086bf5820bf96f24bbf"
+    },
+    {
+      "$oid": "66cf077125cfc038e2ddcd98"
+    },
+    {
+      "$oid": "66d324d2389a1931a0b736b0"
+    },
+    {
+      "$oid": "66d5cc7dda2a105e62313bfb"
+    },
+    {
+      "$oid": "66d948a9a83f1df894625955"
+    },
+    {
+      "$oid": "66d957b8933aa4a24955daf5"
+    },
+    {
+      "$oid": "66d95833e27528b81e2e389c"
+    },
+    {
+      "$oid": "66d95ea10efc45d85026999a"
+    },
+    {
+      "$oid": "66d95ea20efc45d8502699a0"
+    },
+    {
+      "$oid": "66d95ea30efc45d8502699a6"
+    },
+    {
+      "$oid": "66d95ea70efc45d8502699ac"
+    },
+    {
+      "$oid": "66d95ea70efc45d8502699b2"
+    },
+    {
+      "$oid": "66d95ea80efc45d8502699b8"
+    },
+    {
+      "$oid": "66d95ee90efc45d850269a0d"
+    },
+    {
+      "$oid": "66da77fba5ec786e96786d88"
+    },
+    {
+      "$oid": "66da9c3312a4d3e6ba05ab49"
+    },
+    {
+      "$oid": "66da9fe7c4448dc56fad98d5"
+    },
+    {
+      "$oid": "66daa0a733fd34ea66b168a4"
+    },
+    {
+      "$oid": "66daa164d892beca79e4c76f"
+    },
+    {
+      "$oid": "66daa38004e351b8e84cee64"
+    },
+    {
+      "$oid": "66db1d1a018a5e583aecd905"
+    },
+    {
+      "$oid": "66db2c705c2ecb615b80fe0b"
+    },
+    {
+      "$oid": "66db398c5c2ecb615b81005c"
+    },
+    {
+      "$oid": "66db3a7c5c2ecb615b810089"
+    },
+    {
+      "$oid": "66dfb9df8f32e70a0ffa362c"
+    },
+    {
+      "$oid": "66dfbc8e0be3bf6515172f55"
+    },
+    {
+      "$oid": "66dfbec8c26e727dad121919"
+    },
+    {
+      "$oid": "66dfd8e52cf89633e55f2d70"
+    },
+    {
+      "$oid": "66e1b14f7ebda68c26088ffc"
+    },
+    {
+      "$oid": "66e1b4ab7ebda68c260890ca"
+    },
+    {
+      "$oid": "66e1b4ff7ebda68c260890f5"
+    },
+    {
+      "$oid": "66e1b7a37b45590c2cb6e2db"
+    },
+    {
+      "$oid": "66e1bee4847aaf1fb9adc753"
+    },
+    {
+      "$oid": "66e1c2ca847aaf1fb9adc7b3"
+    },
+    {
+      "$oid": "66e1c2dc847aaf1fb9adc7ca"
+    },
+    {
+      "$oid": "66e1c2df847aaf1fb9adc7d1"
+    },
+    {
+      "$oid": "66e1c2f1847aaf1fb9adc7d8"
+    },
+    {
+      "$oid": "66e1c301847aaf1fb9adc7ef"
+    },
+    {
+      "$oid": "66e1c316847aaf1fb9adc806"
+    },
+    {
+      "$oid": "66e1c887e54dca2aa4f80aa6"
+    },
+    {
+      "$oid": "66e86fdd5fca0397a378118d"
+    },
+    {
+      "$oid": "66e870355fca0397a37811b3"
+    },
+    {
+      "$oid": "66e8708e5fca0397a37811e0"
+    },
+    {
+      "$oid": "66e870d65fca0397a37811ea"
+    },
+    {
+      "$oid": "66e87189e353da59dc62e2c0"
+    },
+    {
+      "$oid": "66e871a4bbf35ebca939202f"
+    },
+    {
+      "$oid": "66e871ba54b71dd5b2795881"
+    },
+    {
+      "$oid": "66e872023deb359c3994655c"
+    },
+    {
+      "$oid": "66e8720c3deb359c39946562"
+    },
+    {
+      "$oid": "66e872193deb359c39946568"
+    },
+    {
+      "$oid": "66e872243deb359c3994656e"
+    },
+    {
+      "$oid": "66e872d5a18cf465e8a8ae6f"
+    },
+    {
+      "$oid": "66e87449927bf523bf792bb6"
+    },
+    {
+      "$oid": "66e877392d36729dc58c2e71"
+    },
+    {
+      "$oid": "66e87c002f98a543ae7afd8f"
+    },
+    {
+      "$oid": "66e87c5aa59dd27897e4201c"
+    },
+    {
+      "$oid": "66e87cbaa59dd27897e42070"
+    },
+    {
+      "$oid": "66e9b85bd827f847603ddc26"
+    },
+    {
+      "$oid": "66e9b9b757d2ddc8f51cef5c"
+    },
+    {
+      "$oid": "66e9ba10ffd08a5898d4f072"
+    },
+    {
+      "$oid": "66e9ba6416ae3f190efe3a0e"
+    },
+    {
+      "$oid": "66e9ba7a9a55690896721b15"
+    },
+    {
+      "$oid": "66e9bad640775da775f37acf"
+    },
+    {
+      "$oid": "66e9bb20a3baec3c80fa9ee0"
+    },
+    {
+      "$oid": "66e9bb3c2e1c9a3533b0aabc"
+    },
+    {
+      "$oid": "66e9c441331a11660a46aaa3"
+    },
+    {
+      "$oid": "66ea64af0192e8d7c02f4b48"
+    },
+    {
+      "$oid": "66ea65450192e8d7c02f4bd1"
+    },
+    {
+      "$oid": "66ea68a6b3030d6426258b96"
+    },
+    {
+      "$oid": "66ea68f9a2d948014651ef8e"
+    },
+    {
+      "$oid": "66ea694cfba484a892d66b82"
+    },
+    {
+      "$oid": "66ea69c699b959d8af5401fd"
+    },
+    {
+      "$oid": "66ea69ffc273430b45a38c38"
+    },
+    {
+      "$oid": "66ea6a2f08df1cc1d5ed3ba7"
+    },
+    {
+      "$oid": "66ea6a8aef0351090b59e00e"
+    },
+    {
+      "$oid": "66ea6b11ed8bce5ee65e3d25"
+    },
+    {
+      "$oid": "66ea6b6177ee91580fde7563"
+    },
+    {
+      "$oid": "66ea6b8a77ee91580fde7577"
+    },
+    {
+      "$oid": "66ea6bcdd851fffc0561828c"
+    },
+    {
+      "$oid": "66ea6c04895de635f3d95330"
+    },
+    {
+      "$oid": "66ea6c2b6453b12f930587eb"
+    },
+    {
+      "$oid": "66ea6c4c2a66e89a416c5026"
+    },
+    {
+      "$oid": "66ea6c84e294e9d4c62decd0"
+    },
+    {
+      "$oid": "66ea6c9ed31607cc6f50f334"
+    },
+    {
+      "$oid": "66ea6ccde2c9c961bd6d958f"
+    },
+    {
+      "$oid": "66ea6d6bca20f958c349005f"
+    },
+    {
+      "$oid": "66ea6e2791d26cb7acb81306"
+    },
+    {
+      "$oid": "66ea6e448aa13e70e2910f63"
+    },
+    {
+      "$oid": "66ea6e8014fe1f39fb1380d1"
+    },
+    {
+      "$oid": "66ea6eef8bece6f74b7316f1"
+    },
+    {
+      "$oid": "66ea6f03ff8b29442b0adaef"
+    },
+    {
+      "$oid": "66ea6f32ddcbb72734e71e99"
+    },
+    {
+      "$oid": "66ea6febe726cf0c6461ecca"
+    },
+    {
+      "$oid": "66ea701abb331f9d32cb5aea"
+    },
+    {
+      "$oid": "66ea704df039b1a1f5db48cf"
+    },
+    {
+      "$oid": "66ea707c1d29bc01b5bc7664"
+    },
+    {
+      "$oid": "66ea7090eadfe5c02ff0ea19"
+    },
+    {
+      "$oid": "66ea7114b1d3c8813962814d"
+    },
+    {
+      "$oid": "66ea712a07501bfe680a7bcd"
+    },
+    {
+      "$oid": "66ea7153e22b702a0a983068"
+    },
+    {
+      "$oid": "66ea7319e60cbe074f87b727"
+    },
+    {
+      "$oid": "66eac6cc06711b7e7838113e"
+    },
+    {
+      "$oid": "66eac6e92bd7f5f7eefd21e5"
+    },
+    {
+      "$oid": "66eac72a185d640da0909a56"
+    },
+    {
+      "$oid": "66eac8067a73bf094a97410b"
+    },
+    {
+      "$oid": "66eac8ad7a73bf094a97422f"
+    },
+    {
+      "$oid": "66ead122dbbd842a926db386"
+    },
+    {
+      "$oid": "66ead187dbbd842a926db400"
+    },
+    {
+      "$oid": "66ead20fdbbd842a926db4da"
+    },
+    {
+      "$oid": "66ead2d9dbbd842a926db556"
+    },
+    {
+      "$oid": "66eaf1634d27082d97d50d2a"
+    },
+    {
+      "$oid": "66f2dad88bb64ba7f428ef9a"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-08-28T10:43:55.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T15:29:28.578Z"
+  },
+  "__v": 0,
+  "icon": "hugeicons:smart-phone-01",
+  "thumbnail": "https://res.cloudinary.com/dqx1guyc0/image/upload/v1726663528/yangis-ecommerce/categories/d5tlrphn5z5ixoz4hz11.jpg",
+  "slug": "dien-thoai"
+},
+{
+  "_id": {
+    "$oid": "66eacb1a7a73bf094a97450a"
+  },
+  "name": "Tivi",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726663450/yangis-ecommerce/categories/qxepfoiyolz1rrzcddk5.png",
+  "icon": "hugeicons:television-table",
+  "products": [
+    {
+      "$oid": "66eacfaedbbd842a926db14d"
+    },
+    {
+      "$oid": "66ead00bdbbd842a926db259"
+    },
+    {
+      "$oid": "66ead08ddbbd842a926db2ce"
+    },
+    {
+      "$oid": "66ead0d1dbbd842a926db362"
+    },
+    {
+      "$oid": "66ead320dbbd842a926db5ce"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-18T12:44:10.989Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:18:24.956Z"
+  },
+  "__v": 0,
+  "slug": "tivi"
+}]

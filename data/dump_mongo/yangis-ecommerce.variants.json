@@ -1,0 +1,739 @@
+[{
+  "_id": {
+    "$oid": "66eac7e47a73bf094a974104"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662628/yangis-ecommerce/product-variants/w6zhrxq4kanooexvw0ua.jpg"
+  ],
+  "inStock": 85,
+  "createdAt": {
+    "$date": "2024-09-18T12:30:28.747Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:31:02.570Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8067a73bf094a97410b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac7f07a73bf094a974106"
+  },
+  "label": "Vàng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662639/yangis-ecommerce/product-variants/lf9jrjsuflh8lcertasf.jpg"
+  ],
+  "inStock": 20,
+  "createdAt": {
+    "$date": "2024-09-18T12:30:40.294Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:31:02.569Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8067a73bf094a97410b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac7f57a73bf094a974108"
+  },
+  "label": "Xanh lá",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662644/yangis-ecommerce/product-variants/xmlw6el3b68t8oroekmp.jpg"
+  ],
+  "inStock": 15,
+  "createdAt": {
+    "$date": "2024-09-18T12:30:45.474Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:31:02.572Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8067a73bf094a97410b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac8957a73bf094a974226"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662805/yangis-ecommerce/product-variants/linu9f1xo2wcggo5tnh6.jpg"
+  ],
+  "inStock": 47,
+  "createdAt": {
+    "$date": "2024-09-18T12:33:25.805Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.098Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac9587a73bf094a97431a"
+  },
+  "label": "Xám",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662999/yangis-ecommerce/product-variants/h6rpdoxj8m58nosgmoe9.png"
+  ],
+  "inStock": 100,
+  "createdAt": {
+    "$date": "2024-09-18T12:36:40.233Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:36:50.186Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac9627a73bf094a97431d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead187dbbd842a926db3fd"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665093/yangis-ecommerce/product-variants/y2aespjlaj7zs5esl233.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665094/yangis-ecommerce/product-variants/udjc5ffbyyqy47e4oydq.jpg"
+  ],
+  "inStock": 0,
+  "createdAt": {
+    "$date": "2024-09-18T13:11:35.069Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:11:35.866Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead187dbbd842a926db400"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead2c5dbbd842a926db551"
+  },
+  "label": "Vàng Solar",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665409/yangis-ecommerce/product-variants/ymlveegra8ukxoxhtfpw.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665410/yangis-ecommerce/product-variants/fv0gc1hntlljbrxbdh8z.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665411/yangis-ecommerce/product-variants/ja7odfbuxhw5xfwofacr.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665412/yangis-ecommerce/product-variants/do938my1l9hc5h9ta4po.png"
+  ],
+  "inStock": 30,
+  "createdAt": {
+    "$date": "2024-09-18T13:16:53.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:17:13.588Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead2d9dbbd842a926db556"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eacfaddbbd842a926db14a"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664620/yangis-ecommerce/product-variants/gpixjcpgag14dlpjqgqn.jpg"
+  ],
+  "inStock": 0,
+  "createdAt": {
+    "$date": "2024-09-18T13:03:41.340Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:03:42.177Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eacfaedbbd842a926db14d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead121dbbd842a926db383"
+  },
+  "label": "Vàng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664991/yangis-ecommerce/product-variants/g0gr8bkknge7ooryzhro.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664992/yangis-ecommerce/product-variants/qbrvnpcwpz20o2xg5pj9.png"
+  ],
+  "inStock": 36,
+  "createdAt": {
+    "$date": "2024-09-18T13:09:53.142Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:09:54.350Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead122dbbd842a926db386"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead20edbbd842a926db4d7"
+  },
+  "label": "Xanh lá",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665227/yangis-ecommerce/product-variants/msm3y1uwonc5zv53xzaj.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665228/yangis-ecommerce/product-variants/obgkxse7uoatkq4ph6bk.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665229/yangis-ecommerce/product-variants/gyb1bqrhkuuvgs3wsf4q.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T13:13:50.319Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:13:51.523Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead20fdbbd842a926db4da"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac7ce7a73bf094a974100"
+  },
+  "label": "Xanh dương",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662606/yangis-ecommerce/product-variants/bz2u7xlsfufxidc9aubd.jpg"
+  ],
+  "inStock": 100,
+  "createdAt": {
+    "$date": "2024-09-18T12:30:06.681Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:31:02.570Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8067a73bf094a97410b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac7db7a73bf094a974102"
+  },
+  "label": "Hồng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662619/yangis-ecommerce/product-variants/muv5ujnfwltyff8g1flx.jpg"
+  ],
+  "inStock": 150,
+  "createdAt": {
+    "$date": "2024-09-18T12:30:19.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:31:02.568Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8067a73bf094a97410b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac8457a73bf094a974222"
+  },
+  "label": "Hồng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662725/yangis-ecommerce/product-variants/xnpo6fmmpcmaggpz6zyq.jpg"
+  ],
+  "inStock": 50,
+  "createdAt": {
+    "$date": "2024-09-18T12:32:05.892Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.101Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac8ac7a73bf094a97422c"
+  },
+  "label": "Xanh lá",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662827/yangis-ecommerce/product-variants/zsckbymqvshhoxehwdlp.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T12:33:48.148Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.102Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead11cdbbd842a926db381"
+  },
+  "label": "Xanh nhạt",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664986/yangis-ecommerce/product-variants/awqmtfbktryjno8ngq0h.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664987/yangis-ecommerce/product-variants/gfxptpd7nspxqantx0al.png"
+  ],
+  "inStock": 40,
+  "createdAt": {
+    "$date": "2024-09-18T13:09:48.174Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:09:54.351Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead122dbbd842a926db386"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead17ddbbd842a926db3fb"
+  },
+  "label": "Xanh dương",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665084/yangis-ecommerce/product-variants/u6ht3pmrrsveepxryvoq.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665085/yangis-ecommerce/product-variants/xkjh98ylydqzglivtyy5.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T13:11:25.498Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:11:35.865Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead187dbbd842a926db400"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead1f4dbbd842a926db4d3"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665203/yangis-ecommerce/product-variants/x2jexosezc9cyjvb4hsw.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665203/yangis-ecommerce/product-variants/d4q0nep4nhf1e7lvcj7n.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T13:13:24.509Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:13:51.524Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead20fdbbd842a926db4da"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac84f7a73bf094a974224"
+  },
+  "label": "Xanh",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662734/yangis-ecommerce/product-variants/pbk4gvd9x44pkatsk2ad.jpg"
+  ],
+  "inStock": 30,
+  "createdAt": {
+    "$date": "2024-09-18T12:32:15.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.100Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac89f7a73bf094a974228"
+  },
+  "label": "Trắng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662815/yangis-ecommerce/product-variants/xcxqqfmvjp0jokcxzsii.jpg"
+  ],
+  "inStock": 100,
+  "createdAt": {
+    "$date": "2024-09-18T12:33:35.712Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.101Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac8a47a73bf094a97422a"
+  },
+  "label": "Đỏ",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662819/yangis-ecommerce/product-variants/s3zs33y83ay3m3i3hdi5.jpg"
+  ],
+  "inStock": 30,
+  "createdAt": {
+    "$date": "2024-09-18T12:33:40.150Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.099Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac8fc7a73bf094a97429e"
+  },
+  "label": "Xám",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662908/yangis-ecommerce/product-variants/k99z2n1sioqdat5cjb4h.jpg"
+  ],
+  "inStock": 30,
+  "createdAt": {
+    "$date": "2024-09-18T12:35:08.614Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:35:37.648Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac90a7a73bf094a9742a0"
+  },
+  "label": "Vàng",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662922/yangis-ecommerce/product-variants/vbohik7rvo7izsozgmno.jpg"
+  ],
+  "inStock": 15,
+  "createdAt": {
+    "$date": "2024-09-18T12:35:22.611Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:35:37.647Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac9137a73bf094a9742a2"
+  },
+  "label": "Xanh đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662931/yangis-ecommerce/product-variants/lpmybg2mjriqk2nmzgop.jpg"
+  ],
+  "inStock": 14,
+  "createdAt": {
+    "$date": "2024-09-18T12:35:31.777Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:35:37.650Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eac9187a73bf094a9742a4"
+  },
+  "label": "Bạc",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662935/yangis-ecommerce/product-variants/bfhpbz9oaj5uktl76yos.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T12:35:36.305Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:35:37.651Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead00bdbbd842a926db256"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664714/yangis-ecommerce/product-variants/vmoi9sq2mfmhhdc9si75.jpg"
+  ],
+  "inStock": 10,
+  "createdAt": {
+    "$date": "2024-09-18T13:05:15.027Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:05:15.802Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead00bdbbd842a926db259"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead08cdbbd842a926db2cb"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664844/yangis-ecommerce/product-variants/unqbeemwqm4tsfwmxkzk.png"
+  ],
+  "inStock": 19,
+  "createdAt": {
+    "$date": "2024-09-18T13:07:24.898Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:07:25.941Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead08ddbbd842a926db2ce"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead0d0dbbd842a926db35f"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664912/yangis-ecommerce/product-variants/uv1ulikkebdoqcyyzoqv.png"
+  ],
+  "inStock": 15,
+  "createdAt": {
+    "$date": "2024-09-18T13:08:32.606Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:08:33.426Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead0d1dbbd842a926db362"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead111dbbd842a926db37f"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664977/yangis-ecommerce/product-variants/rs3suqppi4mocbnes18f.png"
+  ],
+  "inStock": 50,
+  "createdAt": {
+    "$date": "2024-09-18T13:09:37.733Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:09:54.351Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead122dbbd842a926db386"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead178dbbd842a926db3f9"
+  },
+  "label": "Xanh lá",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665078/yangis-ecommerce/product-variants/mefbm07i4ug9u676xss4.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665079/yangis-ecommerce/product-variants/hw2tqux3xmgmp8gdgx27.jpg"
+  ],
+  "inStock": 25,
+  "createdAt": {
+    "$date": "2024-09-18T13:11:20.316Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:11:35.864Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead187dbbd842a926db400"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead1fbdbbd842a926db4d5"
+  },
+  "label": "Tím",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665209/yangis-ecommerce/product-variants/mhpcy64kutegfpavw1l1.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665210/yangis-ecommerce/product-variants/l2opd3wkfthmaybrvukm.jpg",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665211/yangis-ecommerce/product-variants/j7pggnbl0b0g5y1e6efp.jpg"
+  ],
+  "inStock": 25,
+  "createdAt": {
+    "$date": "2024-09-18T13:13:31.739Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:13:51.524Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead20fdbbd842a926db4da"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead2acdbbd842a926db54d"
+  },
+  "label": "Xanh Maya",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665385/yangis-ecommerce/product-variants/ylxhxckhsv1mmhqeormz.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665386/yangis-ecommerce/product-variants/aywsczadvjmsevlqtfeb.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665386/yangis-ecommerce/product-variants/xfr0dyv5kecpbfedmok4.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665387/yangis-ecommerce/product-variants/ivvf9ymduvh1jpgjf9xi.png"
+  ],
+  "inStock": 45,
+  "createdAt": {
+    "$date": "2024-09-18T13:16:28.322Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:17:13.586Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead2d9dbbd842a926db556"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead2bddbbd842a926db54f"
+  },
+  "label": "Xám Metal",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665401/yangis-ecommerce/product-variants/zrlh6mmjfuevcn6xg5bg.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665402/yangis-ecommerce/product-variants/xz4m5jzkp2aekxrvqint.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665403/yangis-ecommerce/product-variants/gmvh0o6jxwv6jcizz3mv.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665404/yangis-ecommerce/product-variants/fgpesvxs4bqkgzpoyzpv.png"
+  ],
+  "inStock": 20,
+  "createdAt": {
+    "$date": "2024-09-18T13:16:45.198Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:17:13.587Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead2d9dbbd842a926db556"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead2d8dbbd842a926db553"
+  },
+  "label": "Xanh Mint",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665429/yangis-ecommerce/product-variants/q5hdemspfqt0kt24uwyb.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665430/yangis-ecommerce/product-variants/hzrta34bpsdvw9vddvse.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665431/yangis-ecommerce/product-variants/cmvoumo6zk1dzbtpkqx9.png",
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665431/yangis-ecommerce/product-variants/gyzmxuqoluxsmjipzu1a.png"
+  ],
+  "inStock": 35,
+  "createdAt": {
+    "$date": "2024-09-18T13:17:12.470Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:17:13.585Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead2d9dbbd842a926db556"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ead320dbbd842a926db5cb"
+  },
+  "label": "Đen",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726665503/yangis-ecommerce/product-variants/zctjwe6jyqg4bxmx5xkk.jpg"
+  ],
+  "inStock": 45,
+  "createdAt": {
+    "$date": "2024-09-18T13:18:24.217Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:18:24.962Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66ead320dbbd842a926db5ce"
+  }
+},
+{
+  "_id": {
+    "$oid": "66eaf1614d27082d97d50d27"
+  },
+  "label": "Đỏ",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726673249/yangis-ecommerce/product-variants/olcbsei3uyolwpyoj69c.jpg"
+  ],
+  "inStock": 25,
+  "createdAt": {
+    "$date": "2024-09-18T15:27:29.492Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T15:27:31.239Z"
+  },
+  "__v": 0,
+  "product": {
+    "$oid": "66eaf1634d27082d97d50d2a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66f2da1fd816e78571fa42cd"
+  },
+  "label": "Do",
+  "images": [
+    "http://res.cloudinary.com/dqx1guyc0/image/upload/v1727191584/yangis-ecommerce/product-variants/qfjygvvwtlle4bulejyw.jpg"
+  ],
+  "inStock": 25,
+  "createdAt": {
+    "$date": "2024-09-24T15:26:23.199Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T15:26:23.199Z"
+  },
+  "__v": 0
+}]

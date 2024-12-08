@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 const bcrypt = require('bcrypt')
 const { required } = require('joi')
 
-const UserSchema = new Schema(
+const userSchema = new Schema(
     {
         username: {
             type: String,
@@ -37,11 +37,15 @@ const UserSchema = new Schema(
             emum: ['admin', 'member'],
             default: 'member',
         },
+        isDisabled: {
+            type: Boolean,
+            default: false,
+        },
     },
     { timestamps: true }
 )
 
-UserSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (next) {
     try {
         console.log(`Called before save::: ${this.email} ${this.password} `)
         const salt = await bcrypt.genSalt(10)
@@ -53,8 +57,8 @@ UserSchema.pre('save', async function (next) {
     }
 })
 
-UserSchema.methods.isCheckedPasswrod = async function (password) {
+userSchema.methods.isCheckedPasswrod = async function (password) {
     return await bcrypt.compare(password, this.password)
 }
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', userSchema)

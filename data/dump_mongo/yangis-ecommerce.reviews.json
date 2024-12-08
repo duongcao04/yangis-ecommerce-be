@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "67089dbcc0eb5dbe160a2542"
+  },
+  "user": "66e86e547b978286449d3fd3",
+  "product": "66eac9197a73bf094a9742a7",
+  "rating": 4,
+  "comment": "Sản phẩm tuyệt quá"
+},
+{
+  "_id": {
+    "$oid": "6708f6086d19b95e2094a4c9"
+  },
+  "user": {
+    "$oid": "66e86e547b978286449d3fd3"
+  },
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  },
+  "rating": "4",
+  "comment": "Sansdasdasdasdsad",
+  "createdAt": {
+    "$date": "2024-10-11T09:55:20.677Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T09:55:20.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67090a69b9aaec2ad89387fd"
+  },
+  "user": {
+    "$oid": "66e86e547b978286449d3fd3"
+  },
+  "product": {
+    "$oid": "66ead08ddbbd842a926db2ce"
+  },
+  "rating": "4",
+  "comment": "Tuyệt vời quá ",
+  "createdAt": {
+    "$date": "2024-10-11T11:22:17.635Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T11:22:17.635Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6709d5b6c992ba70361e3f6b"
+  },
+  "user": {
+    "$oid": "66e86e547b978286449d3fd3"
+  },
+  "product": {
+    "$oid": "66eacfaedbbd842a926db14d"
+  },
+  "rating": "4",
+  "comment": "Tuyệt",
+  "createdAt": {
+    "$date": "2024-10-12T01:49:42.298Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-12T01:49:42.298Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6724750f56c701a798aabc4c"
+  },
+  "user": {
+    "$oid": "66e86e547b978286449d3fd3"
+  },
+  "product": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  },
+  "rating": "4",
+  "comment": "asdasdasd",
+  "createdAt": {
+    "$date": "2024-11-01T06:28:31.469Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-01T06:28:31.469Z"
+  },
+  "__v": 0
+}]

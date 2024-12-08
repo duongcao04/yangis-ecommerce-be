@@ -8,7 +8,19 @@ const Brand = require('../Models/brand.model')
 const { cloudinaryUploadImage } = require('../helpers/cloudinary_services')
 
 const productController = {
-    getProducts: async (req, res, next) => {
+    getAllProducts: async (req, res, next) => {
+        try {
+            const products = await Product.find().lean()
+            return res.status(200).json({
+                status: 200,
+                message: 'Get all products successfully',
+                data: products,
+            })
+        } catch (error) {
+            next(error)
+        }
+    },
+    getProductsAndPagination: async (req, res, next) => {
         try {
             const { limit, page, orderBy, sort, ...filters } = req.query
 

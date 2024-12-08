@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "66ea841de60cbe074f87c4fc"
+  },
+  "username": "hello",
+  "password": "$2b$10$mL3TuG7UK.oXTqAm75jIlullnON./0f.JyG/uni17/7XQ.W47qVIq",
+  "email": "daothituongvien2010@gmail.com",
+  "fullName": "Đào Thị Tường Viên",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "member",
+  "createdAt": {
+    "$date": "2024-09-18T07:41:17.736Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:41:17.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e86e547b978286449d3fd3"
+  },
+  "username": "haiduong",
+  "password": "$2b$10$DmU6R9bh.vTLEqh4yKDMuuXXZxARZ9z9AdC1jGOrbb0cdZ1hif1uO",
+  "email": "admin@gmail.com",
+  "phone": "0862248332",
+  "fullName": "Cao Hải Dương",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-09-16T17:43:48.680Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-16T17:43:48.680Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66eaf0274d27082d97d50b89"
+  },
+  "username": "hello",
+  "password": "$2b$10$n0f2hUXwW9HB6SQ1/U9v7eLBuNiq4nw16Ncly88FJo2he/2qv2.Bi",
+  "email": "nguyenvana@gmail.com",
+  "fullName": "Nguyễn Văn A",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "member",
+  "createdAt": {
+    "$date": "2024-09-18T15:22:15.588Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T15:22:15.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e819c05b5770cd1da2b277"
+  },
+  "username": "hello",
+  "password": "$2b$10$cjB4MYg1h7QBVKvSgPHPMu8trDT0wsPgDmjMdRZNzuWuZ3MCFFaDq",
+  "email": "caohaiduong04@gmail.com",
+  "phone": "0372241292",
+  "fullName": "Cao Hải Dương",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "member",
+  "createdAt": {
+    "$date": "2024-09-16T11:42:56.746Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-16T11:42:56.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67208b62cc500deaa3cd7ab4"
+  },
+  "username": "hello",
+  "password": "$2b$10$/KTXP2EohmTv6cV6VxKQYOK.nJNr/xtbi52xqsX7757alhQ29DDl2",
+  "email": "caohaiduong123@gmail.com",
+  "fullName": "Duong Cao",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "member",
+  "createdAt": {
+    "$date": "2024-10-29T07:14:42.522Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T07:14:42.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67208b63cc500deaa3cd7ab6"
+  },
+  "username": "hello",
+  "password": "$2b$10$JAa8kIgTdseS8HmbP9tDpOALyYV7HDb/JBdHG/dc3lnOVVfhYbE6G",
+  "email": "caohaiduong123@gmail.com",
+  "fullName": "Duong Cao",
+  "avatar": "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png",
+  "bonusPoints": 0,
+  "orderHistory": [],
+  "reviews": [],
+  "role": "member",
+  "createdAt": {
+    "$date": "2024-10-29T07:14:43.019Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T07:14:43.019Z"
+  },
+  "__v": 0
+}]

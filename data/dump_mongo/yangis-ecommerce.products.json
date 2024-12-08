@@ -1,0 +1,293 @@
+[{
+  "_id": {
+    "$oid": "66eac9197a73bf094a9742a7"
+  },
+  "name": "Macbook Air M3",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662922/yangis-ecommerce/product-variants/vbohik7rvo7izsozgmno.jpg",
+  "featureImage": [],
+  "price": 31990000,
+  "sale": "",
+  "inStock": 69,
+  "variants": [
+    {
+      "$oid": "66eac8fc7a73bf094a97429e"
+    },
+    {
+      "$oid": "66eac90a7a73bf094a9742a0"
+    },
+    {
+      "$oid": "66eac9137a73bf094a9742a2"
+    },
+    {
+      "$oid": "66eac9187a73bf094a9742a4"
+    }
+  ],
+  "category": {
+    "$oid": "66e1bea3847aaf1fb9adc750"
+  },
+  "brand": {
+    "$oid": "66e85f40c02b70d2315a2007"
+  },
+  "reviews": [
+    {
+      "$oid": "6708f6086d19b95e2094a4c9"
+    },
+    {
+      "$oid": "6724750f56c701a798aabc4c"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-18T12:35:37.635Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-01T06:28:31.588Z"
+  },
+  "__v": 0,
+  "slug": "macbook-air-m3"
+},
+{
+  "_id": {
+    "$oid": "66ead08ddbbd842a926db2ce"
+  },
+  "name": "Smart Tivi Samsung 4K 65 inch UA65DU8000",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664844/yangis-ecommerce/product-variants/unqbeemwqm4tsfwmxkzk.png",
+  "featureImage": [],
+  "price": 14990000,
+  "sale": "",
+  "inStock": 19,
+  "variants": [
+    {
+      "$oid": "66ead08cdbbd842a926db2cb"
+    }
+  ],
+  "category": {
+    "$oid": "66eacb1a7a73bf094a97450a"
+  },
+  "brand": {
+    "$oid": "66ead05fdbbd842a926db2b5"
+  },
+  "reviews": [
+    {
+      "$oid": "67090a69b9aaec2ad89387fd"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-18T13:07:25.931Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T11:22:17.739Z"
+  },
+  "__v": 0,
+  "slug": "smart-tivi-samsung-4k-65-inch-ua65du8000"
+},
+{
+  "_id": {
+    "$oid": "66eac9627a73bf094a97431d"
+  },
+  "name": "Laptop Asus TUF Gaming",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662999/yangis-ecommerce/product-variants/h6rpdoxj8m58nosgmoe9.png",
+  "featureImage": [],
+  "price": 26990000,
+  "sale": "10",
+  "inStock": 100,
+  "variants": [
+    {
+      "$oid": "66eac9587a73bf094a97431a"
+    }
+  ],
+  "category": {
+    "$oid": "66e1bea3847aaf1fb9adc750"
+  },
+  "brand": {
+    "$oid": "66e9431d0c325a9eaae46c32"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-09-18T12:36:50.177Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:36:50.188Z"
+  },
+  "__v": 0,
+  "slug": "laptop-asus-tuf-gaming"
+},
+{
+  "_id": {
+    "$oid": "66eacfaedbbd842a926db14d"
+  },
+  "name": "Xiaomi Mi TV A2 43 inch",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664620/yangis-ecommerce/product-variants/gpixjcpgag14dlpjqgqn.jpg",
+  "featureImage": [],
+  "price": 4990000,
+  "sale": "20",
+  "inStock": 0,
+  "variants": [
+    {
+      "$oid": "66eacfaddbbd842a926db14a"
+    }
+  ],
+  "category": {
+    "$oid": "66eacb1a7a73bf094a97450a"
+  },
+  "brand": {
+    "$oid": "66eacf76dbbd842a926db0fa"
+  },
+  "reviews": [
+    {
+      "$oid": "6709d5b6c992ba70361e3f6b"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-18T13:03:42.158Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-12T01:49:42.429Z"
+  },
+  "__v": 0,
+  "slug": "xiaomi-mi-tv-a2-43-inch"
+},
+{
+  "_id": {
+    "$oid": "66ead00bdbbd842a926db259"
+  },
+  "name": "Xiaomi Mi TV P1 55 inch",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664714/yangis-ecommerce/product-variants/vmoi9sq2mfmhhdc9si75.jpg",
+  "featureImage": [],
+  "price": 7790000,
+  "sale": "",
+  "inStock": 10,
+  "variants": [
+    {
+      "$oid": "66ead00bdbbd842a926db256"
+    }
+  ],
+  "category": {
+    "$oid": "66eacb1a7a73bf094a97450a"
+  },
+  "brand": {
+    "$oid": "66eacf76dbbd842a926db0fa"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-09-18T13:05:15.793Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:05:15.803Z"
+  },
+  "__v": 0,
+  "slug": "xiaomi-tv-p1-55-inch"
+},
+{
+  "_id": {
+    "$oid": "66eac8ad7a73bf094a97422f"
+  },
+  "name": "iPhone 13",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726662725/yangis-ecommerce/product-variants/xnpo6fmmpcmaggpz6zyq.jpg",
+  "featureImage": [],
+  "price": 13990000,
+  "sale": "",
+  "inStock": 267,
+  "variants": [
+    {
+      "$oid": "66eac8457a73bf094a974222"
+    },
+    {
+      "$oid": "66eac84f7a73bf094a974224"
+    },
+    {
+      "$oid": "66eac8957a73bf094a974226"
+    },
+    {
+      "$oid": "66eac89f7a73bf094a974228"
+    },
+    {
+      "$oid": "66eac8a47a73bf094a97422a"
+    },
+    {
+      "$oid": "66eac8ac7a73bf094a97422c"
+    }
+  ],
+  "category": {
+    "$oid": "66ceff6bbf5820bf96f24b8d"
+  },
+  "brand": {
+    "$oid": "66e85f40c02b70d2315a2007"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-09-18T12:33:49.088Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T12:33:49.105Z"
+  },
+  "__v": 0,
+  "slug": "iphone-13"
+},
+{
+  "_id": {
+    "$oid": "66ead0d1dbbd842a926db362"
+  },
+  "name": "Smart Tivi Samsung QLED 4K 65 inch QA65Q70D",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664912/yangis-ecommerce/product-variants/uv1ulikkebdoqcyyzoqv.png",
+  "featureImage": [],
+  "price": 23990000,
+  "sale": "",
+  "inStock": 15,
+  "variants": [
+    {
+      "$oid": "66ead0d0dbbd842a926db35f"
+    }
+  ],
+  "category": {
+    "$oid": "66eacb1a7a73bf094a97450a"
+  },
+  "brand": {
+    "$oid": "66ead05fdbbd842a926db2b5"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-09-18T13:08:33.414Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:08:33.428Z"
+  },
+  "__v": 0,
+  "slug": "smart-tivi-samsung-qled-4k-65-inch-qs65q70d"
+},
+{
+  "_id": {
+    "$oid": "66ead122dbbd842a926db386"
+  },
+  "name": "Samsung Galaxy A35 5G 128GB",
+  "thumbnail": "http://res.cloudinary.com/dqx1guyc0/image/upload/v1726664991/yangis-ecommerce/product-variants/g0gr8bkknge7ooryzhro.png",
+  "featureImage": [],
+  "price": 7990000,
+  "sale": "10",
+  "inStock": 126,
+  "variants": [
+    {
+      "$oid": "66ead111dbbd842a926db37f"
+    },
+    {
+      "$oid": "66ead11cdbbd842a926db381"
+    },
+    {
+      "$oid": "66ead121dbbd842a926db383"
+    }
+  ],
+  "category": {
+    "$oid": "66ceff6bbf5820bf96f24b8d"
+  },
+  "brand": {
+    "$oid": "66ead05fdbbd842a926db2b5"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-09-18T13:09:54.338Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:09:54.352Z"
+  },
+  "__v": 0,
+  "slug": "samsung-galaxy-a35-5g-128gb"
+}]

@@ -1,12 +1,13 @@
 const rootRouter = require('express').Router()
-const variantRoute = require('./variant.route')
-const productRoute = require('./product.route')
-const categoryRoute = require('./category.route')
-const brandRoute = require('./brand.route')
-const orderRoute = require('./order.route')
-const userRoute = require('./user.route')
-const uploadRoute = require('./upload.route')
-const reviewRoute = require('./review.route')
+
+const variantRouter = require('./variant/variant.route')
+const productRouter = require('./product/product.route')
+const categoryRouter = require('./category/category.route')
+const brandRouter = require('./brand/brand.route')
+const orderRouter = require('./order/order.route')
+const uploadRouter = require('./upload/upload.route')
+const reviewRouter = require('./review/review.route')
+const userRouter = require('./user/user.route')
 
 // Root router
 rootRouter.get('/', (req, res) => {
@@ -19,18 +20,18 @@ rootRouter.get('/', (req, res) => {
         github: 'https://github.com/haiduongg',
     })
 })
+rootRouter.use('/users', userRouter)
 
-rootRouter.use('/variant', variantRoute)
-rootRouter.use('/review', reviewRoute)
+rootRouter.use('/products', productRouter)
 
-rootRouter.use('/product', productRoute)
-rootRouter.use('/category', categoryRoute)
-rootRouter.use('/brand', brandRoute)
+rootRouter.use('/variant', variantRouter)
+rootRouter.use('/review', reviewRouter)
 
-rootRouter.use('/order', orderRoute)
+rootRouter.use('/category', categoryRouter)
+rootRouter.use('/brand', brandRouter)
 
-rootRouter.use('/user', userRoute)
+rootRouter.use('/order', orderRouter)
 
-rootRouter.use('/upload', uploadRoute)
+rootRouter.use('/upload', uploadRouter)
 
 module.exports = rootRouter

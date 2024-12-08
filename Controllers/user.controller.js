@@ -1,7 +1,7 @@
 const createError = require('http-errors')
 
-const User = require('../Models/user.model')
-const Review = require('../Models/review.model')
+const User = require('../models/user.model')
+const Review = require('../models/review.model')
 
 const { userValidate, loginValidate } = require('../helpers/validation')
 const {
@@ -55,6 +55,8 @@ const userController = {
             if (!isValid) {
                 throw createError.Unauthorized('Mật khẩu không chính xác')
             }
+            console.log(user)
+
             const accessToken = await signAccessToken(user)
             const refreshToken = await signRefreshToken(user)
             //Don't res password in object user
@@ -88,54 +90,55 @@ const userController = {
             next(error)
         }
     },
-    getAllUser: async (req, res, next) => {
+    getAllUsers: async (req, res, next) => {
         try {
-            const { username, email, name } = req.query
-
-            const optionsHandler = () => {
-                let result = {}
-
-                if (name) {
-                    result['fullName'] = { $regex: name }
-                }
-                if (username) {
-                    result['username'] = username
-                }
-                if (email) {
-                    result['email'] = email
-                }
-
-                return result
-            }
-
-            const options = optionsHandler()
-
-            const user = await User.find(options)
-            res.status(200).json({ status: 200, elements: user })
+            const user = await User.find().lean()
+            res.status(200).json({
+                status: 200,
+                message: 'Get all users successfully',
+                data: user,
+            })
         } catch (error) {
             next(error)
         }
     },
-    getOneUser: async (req, res, next) => {
+    getUsersWithPaginate: async (req, res, next) => {
         try {
-            const { id } = req.params
+            const { page = 1, limit = 10 } = req.query
 
-            const user = await User.findById(id)
-            res.status(200).json({ status: 200, data: user })
-        } catch (error) {
-            next(error)
-        }
-    },
-    deleteUser: async (req, res, next) => {
-        try {
-            const userId = req.params.id
-            const user = await User.findByIdAndDelete(req.params.id)
-            await Review.deleteMany({ user_id: userId })
+            let totalUser
+
+            const users = await User.find()
+                .lean()
+                .then((result) => {
+                    totalUser = result.length
+
+                    const currentPage = page
+
+                    const startIndex = (currentPage - 1) * limit // Tính chỉ số bắt đầu
+                    const endIndex = currentPage * limit // Tính chỉ số kết thúc
+                    return result.slice(startIndex, endIndex) // Cắt mảng theo giới hạn
+                })
+            const totalPage = Math.ceil(totalUser / limit)
 
             res.status(200).json({
                 status: 200,
-                message: 'Delete successfully',
-                elements: user,
+                message: 'Get users with paginate successfully',
+                data: { users, totalUser, totalPage },
+            })
+        } catch (error) {
+            next(error)
+        }
+    },
+    getUserById: async (req, res, next) => {
+        try {
+            const { userId } = req.params
+
+            const user = await User.findById(userId)
+            res.status(200).json({
+                status: 200,
+                message: 'Get user by user id successfully',
+                data: user,
             })
         } catch (error) {
             next(error)
@@ -143,12 +146,36 @@ const userController = {
     },
     updateUser: async (req, res, next) => {
         try {
-            const user = await User.updateOne({ _id: req.params.id }, req.body)
+            const { userId } = req.params
+            const user = await User.updateOne({ _id: userId }, req.body)
 
             if (!user) {
-                throw createError.NotFound(`User not exist`)
+                throw createError.NotFound(`User not found`)
             }
-            res.json({ status: 200, message: 'User updated' })
+            res.json({ status: 200, message: 'User updated successfully' })
+        } catch (error) {
+            next(error)
+        }
+    },
+    deleteUser: async (req, res, next) => {
+        try {
+            const { userId } = req.params
+            const update = {
+                isDisabled: true,
+            }
+
+            const user = await User.findByIdAndUpdate(userId, update)
+
+            if (!user) {
+                throw createError.NotFound('User not found')
+            }
+
+            await Review.deleteMany({ user_id: userId })
+
+            res.status(200).json({
+                status: 200,
+                message: 'User deleted successfully',
+            })
         } catch (error) {
             next(error)
         }
